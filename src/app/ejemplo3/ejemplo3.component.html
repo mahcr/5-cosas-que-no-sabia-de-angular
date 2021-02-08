@@ -5,7 +5,8 @@
       <mat-label>Valor a formatear en dolares</mat-label>
       <input matInput type="number" (keydown.enter)="saveValue($event.target)">
     </mat-form-field>
-    <p>Valor en USD: {{ valor | toUsd }}</p>
-    <!-- <p>Valor en USD: {{ formatToUSD(valor) }}</p> -->
+    <!-- Solucion -->
+    <!-- <p>Valor en USD: {{ valor | toUsd }}</p> -->
+    <p>Valor en USD: {{ formatToUSD(valor) }}</p>
   </mat-card>
 </div>

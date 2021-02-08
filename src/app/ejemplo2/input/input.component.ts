@@ -11,7 +11,6 @@ export class InputComponent implements OnInit {
     @Attribute('type') public type: string
   ) { }
 
-  ngOnInit(): void {
-  }
+  public ngOnInit(): void { }
 
 }

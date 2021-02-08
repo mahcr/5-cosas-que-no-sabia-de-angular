@@ -1,0 +1,8 @@
+<div class="container text-center">
+  <div>
+    <h3>Session</h3>
+    <p><strong>Username:</strong> {{ userService.username }}</p>
+    <p><strong>¿Session activa?:</strong> {{ sessionService.state }}</p>
+    <button mat-button color="primary" (click)="sessionService.state = !sessionService.state">Actualizar</button>
+  </div>
+</div>

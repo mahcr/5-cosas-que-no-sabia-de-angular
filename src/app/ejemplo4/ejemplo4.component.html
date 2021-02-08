@@ -1,0 +1,19 @@
+<div class="container text-center">
+  <mat-card>
+    <h1>Injector Tree</h1>
+    <mat-form-field>
+      <mat-label>Username</mat-label>
+      <input #input matInput type="text"
+        (keydown.enter)="(userService.username = $event.target.value) && input.value = ''">
+    </mat-form-field>
+    <p><strong>Username:</strong> {{ userService.username }}</p>
+
+    <div>
+      <h2>Pages</h2>
+      <a mat-button [routerLink]="'details'">Details</a>
+      <a mat-button [routerLink]="'session'">Session</a>
+    </div>
+  </mat-card>
+</div>
+
+<router-outlet></router-outlet>

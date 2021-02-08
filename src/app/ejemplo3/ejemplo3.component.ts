@@ -4,7 +4,7 @@ import { convertToUSD } from './to-usd.pipe';
 @Component({
   selector: 'demo-ejemplo3',
   templateUrl: './ejemplo3.component.html',
-  styleUrls: ['./ejemplo3.component.scss']
+  styleUrls: ['./ejemplo3.component.scss'],
 })
 export class Ejemplo3Component implements OnInit {
 

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { Ejemplo4Module } from './ejemplo4/ejemplo4.module';
 
 const routes: Routes = [
   {
@@ -24,8 +25,7 @@ const routes: Routes = [
   },
   {
     path: 'ejemplo-4',
-    loadChildren: () =>
-      import('./ejemplo4/ejemplo4.module').then((m) => m.Ejemplo4Module),
+    loadChildren: () => Ejemplo4Module,
   },
 ];
 

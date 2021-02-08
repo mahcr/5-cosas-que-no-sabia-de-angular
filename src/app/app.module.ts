@@ -3,9 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { Ejemplo1Module } from './ejemplo1/ejemplo1.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
+import { ToolbarModule } from './shared/toolbar/toolbar.module';
 
 @NgModule({
   declarations: [
@@ -15,7 +15,8 @@ import { MaterialModule } from './material.module';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    ToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

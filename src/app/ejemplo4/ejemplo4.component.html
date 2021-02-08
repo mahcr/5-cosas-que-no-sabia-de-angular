@@ -1,3 +1,5 @@
+<p *ngIf="sessionService.state" class="session"><strong>Session:</strong> {{ sessionService.state }}</p>
+
 <div class="container text-center">
   <mat-card>
     <h1>Injector Tree</h1>
@@ -7,7 +9,6 @@
         (keydown.enter)="(userService.username = $event.target.value) && input.value = ''">
     </mat-form-field>
     <p><strong>Username:</strong> {{ userService.username }}</p>
-
     <div>
       <h2>Pages</h2>
       <a mat-button [routerLink]="'details'">Details</a>

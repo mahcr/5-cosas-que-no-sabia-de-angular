@@ -6,8 +6,8 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .container {
   display: flex;
   justify-content: center;
-
   width: 100%;
+  margin-top: 50px;
 
   mat-card {
     max-width: 600px;

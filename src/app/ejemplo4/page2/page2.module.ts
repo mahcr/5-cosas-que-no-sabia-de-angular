@@ -5,7 +5,6 @@ import { Page2RoutingModule } from './page2-routing.module';
 import { Page2Component } from './page2.component';
 import { SessionService } from '../page/session.service';
 
-
 @NgModule({
   declarations: [Page2Component],
   imports: [

@@ -6,7 +6,6 @@ import { PageComponent } from './page.component';
 import { MaterialModule } from 'src/app/material.module';
 import { SessionService } from './session.service';
 
-
 @NgModule({
   declarations: [PageComponent],
   imports: [

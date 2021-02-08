@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+
+  mat-card {
+    max-width: 600px;
+    width: 100%;
+  }
+}
+
+.calculator-container {
+  display: flex;
+}
+
+.rubros,
+.form {
+  width: 50%;
+}
+
+.mat-card {
+  padding: 40px;
+}

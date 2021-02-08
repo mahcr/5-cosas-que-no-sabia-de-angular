@@ -1,14 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { CalculatorComponent } from './calculator/calculator.component';
-import { TotalComponent } from './total/total.component';
-
-
+import { Ejemplo3Component } from './ejemplo3.component';
+import { ToUsdPipe } from './to-usd.pipe';
+import { MaterialModule } from '../material.module';
+import { Ejemplo3RoutingModule } from './ejemplo3-routing.module';
 
 @NgModule({
-  declarations: [CalculatorComponent, TotalComponent],
+  declarations: [Ejemplo3Component, ToUsdPipe],
   imports: [
-    CommonModule
+    CommonModule,
+    MaterialModule,
+    Ejemplo3RoutingModule
   ]
 })
 export class Ejemplo3Module { }

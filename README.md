@@ -9,3 +9,7 @@ Contiene los siguientes ejemplos:
 
 Bonus
 6. Critical Inline CSS
+
+
+Twitter: [@malvarezcr](https://twitter.com/malvarezcr)
+LinkedIn: [Mariano Álvarez](https://www.linkedin.com/in/mahcr/)

@@ -1,6 +1,26 @@
-<div class="container text-center">
+<div class="container">
   <mat-card>
-    <h1>@Attribute Decorator</h1>
-    <demo-input type="text"></demo-input>
+    <h1>Calculadora</h1>
+    <div class="calculator-container">
+      <div class="rubros">
+        <div>
+          <ul>
+            <li *ngFor="let monto of rubros$ | async">{{ monto }}</li>
+          </ul>
+        </div>
+        <div>
+          <!-- hmm, hay algo interesante acá -->
+          <demo-impuestos subTotal="{{subTotal$ | async}}"></demo-impuestos>
+        </div>
+      </div>
+      <div class="form">
+        <form>
+          <mat-form-field>
+            <mat-label>Monto</mat-label>
+            <input #montoInput type="number" matInput (keydown.enter)="addMount($event)">
+          </mat-form-field>
+        </form>
+      </div>
+    </div>
   </mat-card>
 </div>

@@ -15,13 +15,8 @@ const routes: Routes = [
   },
   {
     path: 'ejemplo-3',
-    children: [
-      {
-        path: '',
-        loadChildren: () =>
-          import('./ejemplo3/ejemplo3.module').then((m) => m.Ejemplo3Module),
-      },
-    ],
+    loadChildren: () =>
+        import('./ejemplo3/ejemplo3.module').then((m) => m.Ejemplo3Module),
   },
   {
     path: 'ejemplo-4',

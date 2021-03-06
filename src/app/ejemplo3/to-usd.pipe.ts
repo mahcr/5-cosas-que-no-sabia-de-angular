@@ -10,7 +10,7 @@ export function convertToUSD(number) {
 })
 export class ToUsdPipe implements PipeTransform {
 
-  transform(value: unknown, ...args: unknown[]): unknown {
+  public transform(value: unknown, ...args: unknown[]): unknown {
     return convertToUSD(value);
   }
 
